@@ -405,7 +405,7 @@ spec:
       - name: IMAGE
         value: $(tasks.build-container.results.IMAGE_URL)
       - name: ADDITIONAL_TAGS
-        value: ["tag3", "from-{{source-branch}}"]
+        value: ["tag3", "from-{{source_branch}}"]
       runAfter:
       - build-container
       taskRef:
